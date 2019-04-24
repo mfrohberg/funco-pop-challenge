@@ -6,3 +6,5 @@ export default (history: any) => combineReducers({
   router: connectRouter(history),
   auctionsReducer
 })
+
+export * from './auctionsReducer'

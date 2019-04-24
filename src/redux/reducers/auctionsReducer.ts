@@ -20,11 +20,11 @@ export interface Auction {
   gift: boolean
 }
 
-const sortAlphabetically = createAction('auctions/sort-alphabetically') as any
-const sortPriceAscending = createAction('auctions/sort-price-ascending') as any
-const sortPriceDescending = createAction('auctions/sort-price-descending') as any
-const sortEndingSoonest = createAction('auctions/sort-ending-soonest') as any
-const sortEndingLatest = createAction('auctions/sort-ending-latest') as any
+export const sortAlphabetically = createAction('auctions/sort-alphabetically') as any
+export const sortPriceAscending = createAction('auctions/sort-price-ascending') as any
+export const sortPriceDescending = createAction('auctions/sort-price-descending') as any
+export const sortEndingSoonest = createAction('auctions/sort-ending-soonest') as any
+export const sortEndingLatest = createAction('auctions/sort-ending-latest') as any
 
 
 const priceLowToHigh = (a: any, b: any) => a.price - b.price

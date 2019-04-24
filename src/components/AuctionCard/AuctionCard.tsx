@@ -1,5 +1,11 @@
 import * as React from 'react'
-import { Card } from './styled'
+import {
+  Box,
+  Card,
+  Image,
+  Heading,
+  Text
+} from 'rebass'
 
 export interface AuctionProps {
   title: string
@@ -7,7 +13,7 @@ export interface AuctionProps {
 
 const AuctionCard = (props: AuctionProps)  => (
   <Card>
-    <h1> {props.title} </h1>
+    <Text as={'h2'}> {props.title} </Text>
   </Card>
 )
 
